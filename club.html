@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Cinépolis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+	    flex-direction: column; /* Alinea los elementos verticalmente */
+    	    justify-content: space-between; /* Mantiene el footer abajo */
+        }
+
+        .tarjetaformulario {
+            width: 100%;
+            max-width: 460px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo-contenedor {
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            max-width: 400px; 
+            height: auto;
+            display: block;
+        }
+
+        h1 {
+            color: #0A1B3D;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        p.instrucciones {
+            color: #3B4B68;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.4;
+            max-width: 380px;
+            margin-bottom: 30px;
+        }
+
+        .recuadro-azul {
+            border: 1.5px solid #2B5CB8;
+            border-radius: 8px;
+            padding: 0 15px 10px 15px;
+            width: 100%;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+         legend {
+            color: #2B5CB8;
+            font-size: 13px;
+            font-weight: 500;
+            padding: 0 5px;
+            margin-left: 10px;
+        }
+
+         input {
+            width: 100%;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            color: #0A1B3D;
+            padding: 5px 0;
+            background: transparent;
+        }
+
+        
+        .boton-continuar {
+            width: 100%;
+            background-color: #E2E5E9; 
+            color: #A0AAB8;
+            border: none;
+            padding: 14px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .boton-regresar {
+            width: 100%;
+            background-color: #E2E5E9; 
+            color: #2B5CB8;
+            border: none;
+            padding: 14px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 20px;
+	    text-decoration: none;
+        }
+
+
+        .linea {
+            width: 100%;
+            height: 1px;
+            background-color: #E5E8ED;
+            margin-top: 10px;
+        }
+
+	a{
+		    text-decoration:none;
+		    color: #05102A;
+		    font-size:15px;
+		}
+
+	 footer {
+		    background-color:#05102A ;
+		    color: white;
+		    padding: 20px;
+		    text-align: center;
+		    border-top: 2px solid #131921;
+		    font-family: "Playfair Display", sans-serif; 
+		    font-weight: 600;
+		    width: 100%; /* Asegura que ocupe todo el ancho inferior */
+	}
+    </style>
+</head>
+<body>
+
+    <div class="tarjetaformulario">
+        
+        <!-- Contenedor con Imagen -->
+        <div class="logo-contenedor">
+     
+            <img src="img/logocc.png" alt="Logo Club Cinépolis" class="logo">
+        </div>
+
+        <h1>Preventas </h1>
+        <p class="instrucciones">Para acceder a las preventas accede a tu cuenta Club Cinépolis </p>
+
+        <fieldset class="recuadro-azul">
+            <legend>Correo electrónico</legend>
+            <input type="email" autofocus>
+        </fieldset>
+
+        <fieldset class="recuadro-azul">
+            <legend>Contraseña</legend>
+            <input type="text">
+        </fieldset>
+
+        <fieldset class="recuadro-azul">
+            <legend>No. Tarjeta</legend>
+            <input type="text">
+        </fieldset>
+
+       
+        <button class="boton-continuar">Continuar</button>
+        <button class="boton-regresar" onclick="location.href='index.html'">Regresar</button>
+	<a href="registro.html" > ¿No tienes cuenta? </a>
+
+        <div class="linea"></div>
+    </div>
+	<footer>
+        	<p>Nombre: Ortiz Lugo Aime Alexandra | No. Control: 24308051280608</p>
+        	<p>Semestre: 5to | Grupo: I | Especialidad: Programación</p>
+    	</footer>
+</body>
+</html>

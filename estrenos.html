@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+	<!--Link para la tipografia monserrat-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Estrenos </title>
+
+<style>
+	/*Estilo para el encabezado , nos pone color , marca la separacion de los bordes, alinea los elementos al centro y los acomoda en una sola fila*/
+    header {
+            background-color: #05102A;
+            color: #F0F8FF;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 15px;
+	    padding: 10px 25px;
+	    font-family: 'Montserrat', 'Poppins', sans-serif;
+        }
+
+	/*Clase para el tamaño del logo del encabezado */
+
+        .logo {
+            height: 60px;
+            width: auto;
+            flex-shrink: 0;
+        }
+
+	.enlaces {
+    		margin-left: auto; /* Empuja iniciar secion y registro a la derecha */
+    		display: flex;
+    		gap: 10px; /* Separación pequeña y fija entre los dos textos */
+    		padding-right: 15px;
+	}
+
+	
+	header a{
+		    text-decoration:none;
+		    color: #F0F8FF;
+		    font-size:15px;
+		}
+	/*Color de fondo y espaciado de los bordes de la pantalla de la parte principal de la página */
+		main {
+	    background-color: white;
+	    padding: 20px 60px;
+	    }
+	
+		 footer {
+		            background-color:#05102A ;
+		            color: white;
+		            padding: 20px;
+		            text-align: center;
+		            border-top: 2px solid #131921;
+		            font-family: "Playfair Display", sans-serif; 
+		            font-weight: 600;
+		        }
+	/* Contenedor que pone las tarjetas en fila */
+		.contenedor-tarjetas {
+		    display: flex;
+		    flex-wrap: wrap; /* Si no caben en la pantalla, bajan a la siguiente fila */
+		    gap: 10px;      /* Espacio entre tarjetas */
+		}
+		
+		/* Cada tarjeta individual */
+		.tarjeta {
+		    background-color: white; /*Color del fondo*/
+		    padding: 15px;
+		    width: 17%;     /* Con 17% caben exactamente 5 tarjetas en una fila */
+		    border-radius: 8px; /*le da alas esquinas un borde redondeado*/
+		}
+		
+		.tarjeta img {
+		    width: 100%;    /* La imagen se adapta al ancho de la tarjeta */
+		    height: auto;  /*El alto se adapta segun el tamaño original de la imagen*/
+		}
+		
+		h1{
+		font-size:35px;
+		font-weight: 700;
+		font-family: 'Montserrat', sans-serif;
+		text-align:center;
+		color:#00008B;
+		}
+
+		h2{
+		font-size:15px;
+		font-weight: 700;
+		font-family: 'Montserrat', sans-serif;
+		}
+
+		h3{
+		font-size:15px;
+		font-weight: 700;
+		color:#1E5034;
+		}
+
+.circulo-letra {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: #EAF7EE;
+            color: #1E5034;
+            font-size: 15px;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+		.estoyaqui{
+			color:#FFD700;
+		}
+
+    </style>
+</head>
+<body>
+<!--Inicia el encabezado-->
+     <header>
+
+<!--Pone la imagen del logo en el encabezado-->
+	<img src="img/logo.png" alt="Logo" class="logo">
+
+        <a href="index.html"> Cartelera | Inicio</a>
+        <a href="" class="estoyaqui"> Proximos estrenos</a>
+        <a href="club.html"> Preventas </a>
+	<div class="enlaces">
+	<a href="iniciars.html" > Iniciar sesion  |</a>
+	<a href="registro.html" > Registrarse </a>
+	</div>
+    </header>
+
+
+<main>
+
+	<h1> Proximos estrenos </h1>
+	<div class="contenedor-tarjetas">
+	
+			<!--Esta es una tarjeta individual , en ella contiene el estilo de la dicha , y una imagen con su descripción -->
+			<!--Como podemos ver cada div , es una tarjeta , en este caso tenemos 5 tarjetas con el mismo formato , unicamente cambia la imagen-->
+
+	        <div class="tarjeta">
+	            <img src="img/e1.png" alt="Avengers: Doomsday">
+		    <h2> Avengers: Doomsday </h2>
+		    <h3 class="circulo-letra"> ⓘ </h3>
+	        </div>
+	        <div class="tarjeta">
+	            <img src="img/e2.png" alt="Avengers: Doomsday Infinity Vision">
+		    <h2> Avengers: Doomsday Infinity Vision </h2>
+		    <h3 class="circulo-letra"> ⓘ </h3>
+	        </div>
+	        <div class="tarjeta">
+	            <img src="img/e3.png" alt="Trivia Night Avengers: Doomsday">
+		    <h2> Trivia Night Avengers: Doomsday </h2>
+		    <h3 class="circulo-letra"> ⓘ </h3>
+	        </div>
+	        <div class="tarjeta">
+	            <img src="img/e4.png" alt="Menú Temático: Street Fighter">
+		    <h2> Menú Temático: Street Fighter </h2>
+		    <h3 class="circulo-letra"> ⓘ </h3>
+	        </div>
+        	<div class="tarjeta">
+            	    <img src="img/e5.png" alt="Menú Temático: Street Fighter">
+		    <h2> Menú Temático: Street Fighter </h2>
+		    <h3 class="circulo-letra"> ⓘ </h3>
+        	</div>
+
+
+</div>
+
+<div class="contenedor-tarjetas">
+	
+			<!--Esta es una tarjeta individual , en ella contiene el estilo de la dicha , y una imagen con su descripción -->
+			<!--Como podemos ver cada div , es una tarjeta , en este caso tenemos 5 tarjetas con el mismo formato , unicamente cambia la imagen-->
+        	<div class="tarjeta">
+            	    <img src="img/e6.png" alt="BTS WORLD TOUR 'ARIRANG' IN BUENOS AIRES: EN VIVO">
+		    <h2>BTS WORLD TOUR 'ARIRANG' IN BUENOS AIRES: EN VIVOEl Corazón De La Bestia </h2>
+		    <h3 class="circulo-letra"> ⓘ </h3>
+        	</div>
+	        <div class="tarjeta">
+	            <img src="img/e7.png" alt="HCF: SEVENTEEN WORLD TOUR NEW">
+		    <h2> HCF: SEVENTEEN WORLD TOUR NEW </h2>
+		    <h3 class="circulo-letra"> ⓘ </h3>
+	        </div>
+	        <div class="tarjeta">
+	            <img src="img/e8.png" alt="Godzilla Minus Zero">
+		    <h2> Godzilla Minus Zero </h2>
+		    <h3 class="circulo-letra"> ⓘ </h3>
+	        </div>
+	        <div class="tarjeta">
+	            <img src="img/e9.png" alt="Duna: Parte Tres">
+		    <h2> Duna: Parte Tres </h2>
+		    <h3 class="circulo-letra"> ⓘ </h3>
+	        </div>
+	        <div class="tarjeta">
+	            <img src="img/e10.png" alt="Ozzy & Black Sabbath: Back To The Beginnin">
+		    <h2> Ozzy & Black Sabbath: Back To The Beginning </h2>
+		    <h3 class="circulo-letra"> ⓘ </h3>
+	        </div>
+
+
+</div>
+
+</main>
+    </div>
+	<!--Aqui inicia el pie de pagina -->
+    <footer>
+        <p>Nombre: Ortiz Lugo Aime Alexandra | No. Control: 24308051280608</p>
+        <p>Semestre: 5to | Grupo: I | Especialidad: Programación</p>
+    </footer>
+</body>
+</html>
