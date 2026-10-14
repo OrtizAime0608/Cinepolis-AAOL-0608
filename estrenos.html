@@ -9,7 +9,7 @@
     <title> Estrenos </title>
 
 <style>
-	/*Estilo para el encabezado , nos pone color , marca la separacion de los bordes, alinea los elementos al centro y los acomoda en una sola fila*/
+	/*Estilo para el encabezado  da el color de fonfdo , de la letra , alinea todos los elementos uno enseguida del otro , da espacio entre cada elemento y define la tipografia*/
     header {
             background-color: #05102A;
             color: #F0F8FF;
@@ -28,7 +28,7 @@
             width: auto;
             flex-shrink: 0;
         }
-
+	/*Unicamente hace una clase de estilo para los dos enlaces de la derecha de la barra de navegación */
 	.enlaces {
     		margin-left: auto; /* Empuja iniciar secion y registro a la derecha */
     		display: flex;
@@ -36,7 +36,7 @@
     		padding-right: 15px;
 	}
 
-	
+	/* estilo para los enlaces del encabezado (forman la barra de busqueda)  , le quitan la linea de abajo de enlace ,define el color de la letra y el tamaño */
 	header a{
 		    text-decoration:none;
 		    color: #F0F8FF;
@@ -47,7 +47,7 @@
 	    background-color: white;
 	    padding: 20px 60px;
 	    }
-	
+	/* Da estilo al pie de pagina , establece color de fondo , color de letra , espacio al rededor de los elementos , los alinea al centro , define el grosor y la tipografia */
 		 footer {
 		            background-color:#05102A ;
 		            color: white;
@@ -57,26 +57,26 @@
 		            font-family: "Playfair Display", sans-serif; 
 		            font-weight: 600;
 		        }
-	/* Contenedor que pone las tarjetas en fila */
+	/* Contenedor que pone las tarjetas en fila , introduce 5 peliculas*/
 		.contenedor-tarjetas {
 		    display: flex;
 		    flex-wrap: wrap; /* Si no caben en la pantalla, bajan a la siguiente fila */
 		    gap: 10px;      /* Espacio entre tarjetas */
 		}
 		
-		/* Cada tarjeta individual */
+		/* Cada tarjeta individual , cada una es una pelicula */
 		.tarjeta {
 		    background-color: white; /*Color del fondo*/
 		    padding: 15px;
 		    width: 16%;     /* Con 16% caben exactamente 5 tarjetas en una fila */
 		    border-radius: 8px; /*le da alas esquinas un borde redondeado*/
 		}
-		
+				/* Define el estilo de las imagenes unicamente de las tarjetas */
 		.tarjeta img {
 		    width: 100%;    /* La imagen se adapta al ancho de la tarjeta */
 		    height: auto;  /*El alto se adapta segun el tamaño original de la imagen*/
 		}
-		
+			/* Da estilo a el encabezado h1 */
 		h1{
 		font-size:35px;
 		font-weight: 700;
@@ -84,19 +84,19 @@
 		text-align:center;
 		color:#00008B;
 		}
-
+	/* Da estilo a el encabezado h2 */
 		h2{
 		font-size:15px;
 		font-weight: 700;
 		font-family: 'Montserrat', sans-serif;
 		}
-
+/* Da estilo a el encabezado h3  */
 		h3{
 		font-size:15px;
 		font-weight: 700;
 		color:#1E5034;
 		}
-
+/* Es especificamente la el simbolo de informacion debajo de las peliculas de estreno , es un pequeño circulo verde , con un fondo verde claro */
 .circulo-letra {
             width: 25px;
             height: 25px;
@@ -110,6 +110,7 @@
             align-items: center;
             box-shadow: 0 4px 8px rgba(0,0,0,0.3);
         }
+	/* Cambia el color de la letra de alguno de los enlaces del encabezado , para mostrar en que pagina estas actualmente */
 		.estoyaqui{
 			color:#FFD700;
 		}
@@ -122,7 +123,7 @@
 
 <!--Pone la imagen del logo en el encabezado-->
 	<img src="img/logo.png" alt="Logo" class="logo">
-
+<!-- Estos 5 enlaces forman la barra de navegación , los primeros 3 se alinean a la izquierda junto con la imagen , los ultimos dos se alinean a la izquierda -->
         <a href="index.html"> Cartelera | Inicio</a>
         <a href="" class="estoyaqui"> Proximos estrenos</a>
         <a href="club.html"> Preventas </a>
@@ -134,8 +135,9 @@
 
 
 <main>
-
+<!-- Aqui inicia el cuerpo de la página -->
 	<h1> Proximos estrenos </h1>
+	<!-- Aqui inicia el contenedor de 5 tarjetas para acomodar los estrenos de las peliculas  -->
 	<div class="contenedor-tarjetas">
 	
 			<!--Esta es una tarjeta individual , en ella contiene el estilo de la dicha , y una imagen con su descripción -->
