@@ -6,13 +6,14 @@
     <title>Iniciar Sesión </title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+		/* es un selector universal , modifica en todos los navegadores y le da este estilo a absoutamente todos los elementos de tu html y los hace un modelo de caja */
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
             font-family: 'Montserrat', sans-serif;
         }
-
+/* Da estlo al cuerpo de la pagina , pone color de fondo , alinea todos los elementos en una fila horizontal , centra verticamente los elementos , alinea los elementos , y da espacio a los lados por dentro*/
         body {
             background-color: #ffffff;
             display: flex;
@@ -20,10 +21,10 @@
             align-items: center;
             min-height: 100vh;
             padding: 20px;
-	    flex-direction: column; /* Alinea los elementos verticalmente */
+	        flex-direction: column; /* Alinea los elementos verticalmente */
     	    justify-content: space-between; /* Mantiene el footer abajo */
         }
-
+/* Crea la tarjeta para el formularo de iniciar sesion , abarca el 100% que equivale a 460px , alinea todos los elementos al centro de la hoja y los alinea uno bajo el otro*/
         .tarjetaformulario {
             width: 100%;
             max-width: 460px;
@@ -32,27 +33,27 @@
             flex-direction: column;
             align-items: center;
         }
-
+/* genera una clase para el espacio asignado para el logo que aparece centrado en la parte superior de club cinepolis, lo alinea a centro */
         .logo-contenedor {
             margin-bottom: 25px;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-
+/* Clase para la imagen del logo , le asigna un tamaño */
         .logo {
             max-width: 400px; 
             height: auto;
             display: block;
         }
-
+/* Asigna el color , tamaño , grosor y el margen inferior*/
         h1 {
             color: #0A1B3D;
             font-size: 28px;
             font-weight: 700;
             margin-bottom: 15px;
         }
-
+/* Le da este estilo a los parrafos de instrucciones  */
         p.instrucciones {
             color: #3B4B68;
             font-size: 16px;
@@ -61,7 +62,7 @@
             max-width: 380px;
             margin-bottom: 30px;
         }
-
+/* Crea el recuadro azul de cada celda de informacion que pide , le asigna un borde , un espacio a sus lados , da bordes redondeados , alinea el texto a la derecha*/
         .recuadro-azul {
             border: 1.5px solid #2B5CB8;
             border-radius: 8px;
@@ -70,7 +71,7 @@
             text-align: left;
             margin-bottom: 20px;
         }
-
+/* Da estilo a el texto que indica lo que solicita el campo , le da color azul , su tamaño */
          legend {
             color: #2B5CB8;
             font-size: 13px;
@@ -78,7 +79,7 @@
             padding: 0 5px;
             margin-left: 10px;
         }
-
+/* En esta seccion de la estilo a donde se guardaran los datos , se le asigna la variable a la equale y los enviara en un futuro a un servidor */
          input {
             width: 100%;
             border: none;
@@ -88,7 +89,7 @@
             padding: 5px 0;
             background: transparent;
         }
-
+/* Boton para presionar , tiene una apariencia de deshabilitado , color gris , las letras color blanca , orillas redondeadas , asigna el tamaño de la letra y abarca el 100% del tamaño de la tarjeta */
         
         .boton-continuar {
             width: 100%;
@@ -101,7 +102,7 @@
             font-weight: 600;
             margin-bottom: 20px;
         }
-
+/* Boton gris con letras azules , este es para regresar a la pagina rincipal , toma el 100% del ancho de la tarjeta , asigna colores y tamaños */
         .boton-regresar {
             width: 100%;
             background-color: #E2E5E9; 
@@ -115,19 +116,20 @@
 	    text-decoration: none;
         }
 
-
+/*Pequeña linea gris tenue debajo de los botones , detalle estético */
         .linea {
             width: 100%;
             height: 1px;
             background-color: #E5E8ED;
             margin-top: 10px;
         }
-
+/* quita la linea del enlace , es unicamente para mandar a crear cuenta en caso de no tener una , le da color a la letra y tamaño */
 	a{
 		    text-decoration:none;
 		    color: #05102A;
 		    font-size:15px;
 		}
+		/* Estilo para el pie de pagina */
 	 footer {
 		    background-color:#05102A ;
 		    color: white;
@@ -141,18 +143,20 @@
     </style>
 </head>
 <body>
-
+<!--Empieza la tarjeta centrada en la pagina para agregar el formulario  -->
     <div class="tarjetaformulario">
         
-        <!-- Contenedor con Imagen -->
+        <!-- Contenedor con iimagen de club cinepolis , logo -->
         <div class="logo-contenedor">
      
             <img src="img/logocc.png" alt="Logo Club Cinépolis" class="logo">
         </div>
 
+		<!-- Muestra eltexto para iniciar sesion -->
         <h1>Inicia sesión</h1>
         <p class="instrucciones">Ingresa tus datos para acceder a tu cuenta Cinépolis </p>
-
+<!-- Cada uno es un campo , con su espacio para ingresar los datos , teiene un texto dode especifica que ingresar,define el formato de lo que recibira   -->
+		<!-- autofocus sirve para que el cursor se pponga automaticamente en el campo -->
         <fieldset class="recuadro-azul">
             <legend>Correo electrónico</legend>
             <input type="email" autofocus>
@@ -168,10 +172,11 @@
             <input type="text">
         </fieldset>
 
-       
+       <!-- Boton para continuar , es gris y parece deshablitado -->
         <button class="boton-continuar">Continuar</button>
+		<!-- Boton para regresar a la cartelera , este accede al url de el index , este tiene las letras en color azul -->
         <button class="boton-regresar" onclick="location.href='index.html'">Regresar</button>
-
+<!-- link que nos envia a crear cueenta , este no es un boton , uicamente aparece el texto y al presionarlo te redirige -->
 	<a href="registro.html" > ¿No tienes cuenta? </a>
 
         <div class="linea"></div>
